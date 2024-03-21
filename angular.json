@@ -30,7 +30,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@glidejs/glide/src/assets/sass/glide.core",
+              "node_modules/@glidejs/glide/src/assets/sass/glide.theme"
             ],
             "scripts": []
           },
@@ -97,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "5a472b6b-1935-4c2e-b22e-8505faadb514"
   }
 }

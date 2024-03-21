@@ -1,13 +1,20 @@
-import { Component } from '@angular/core';
+import { NavbarComponent } from './navbar/navbar.component';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { BannerComponent } from './banner/banner.component';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,BannerComponent, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'Portfolio';
+ 
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }
