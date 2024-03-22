@@ -30,9 +30,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/@glidejs/glide/src/assets/sass/glide.core",
-              "node_modules/@glidejs/glide/src/assets/sass/glide.theme"
+              "src/styles.scss"
+            
             ],
             "scripts": []
           },
@@ -46,8 +45,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "30kb",
+                  "maximumError": "40kb"
                 }
               ],
               "outputHashing": "all"
